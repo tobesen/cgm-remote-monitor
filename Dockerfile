@@ -18,6 +18,6 @@ RUN npm ci --cache /tmp/empty-cache --omit=optional --force && \
   # chown node:node /tmp/public
 
 USER node
-EXPOSE 1337
+EXPOSE 8080
 
 CMD ["node", "lib/server/server.js"]
